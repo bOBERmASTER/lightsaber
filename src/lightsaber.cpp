@@ -310,28 +310,28 @@ void loop()
                     colorWipe(lastColor);
                 }
                 break;
-            case 0x4: //R
+            case 0x4: // R RED
                 colorWipe(strip.Color(255, 0, 0));
                 break;
-            case 0x5: //G
+            case 0x5: // G GREEN
                 colorWipe(strip.Color(0, 255, 0));
                 break;
-            case 0x6: //B
+            case 0x6: // B BLUE
+                colorWipe(strip.Color(0, 160, 255));
+                break;
+            case 0x7: // W WHITE
+                colorWipe(strip.Color(255, 255, 220));
+                break;
+            case 0x8: // REDDISH
+                colorWipe(strip.Color(255, 120, 0));
+                break;
+            case 0x9: // GREENISH
+                colorWipe(strip.Color(0, 255, 120));
+                break;
+            case 0xA: // DEEPBLUE
                 colorWipe(strip.Color(0, 0, 255));
                 break;
-            case 0x7: //W
-                colorWipe(strip.Color(255, 255, 255));
-                break;
-            case 0x8:
-                colorWipe(strip.Color(255, 76, 0));
-                break;
-            case 0x9:
-                colorWipe(strip.Color(0, 255, 51));
-                break;
-            case 0xA:
-                colorWipe(strip.Color(0, 153, 255));
-                break;
-            case 0xB: //FLASH
+            case 0xB: // FLASH
                 police(flashCounter);
                 // if (strobe == false)
                 // {
@@ -342,27 +342,27 @@ void loop()
                 //     strobe = false;
                 // }
                 break;
-            case 0xC:
-                colorWipe(strip.Color(255, 127, 0));
+            case 0xC: // ORANGE
+                colorWipe(strip.Color(255, 160, 0));
                 break;
-            case 0xD:
-                colorWipe(strip.Color(0, 255, 153));
+            case 0xD: // TURQUOISE
+                colorWipe(strip.Color(0, 255, 160));
                 break;
-            case 0xE:
-                colorWipe(strip.Color(255, 0, 204));
+            case 0xE: // PURPLE
+                colorWipe(strip.Color(170, 0, 255));
                 break;
-            case 0xF: //STROBE
+            case 0xF: // STROBE
                 flash(strobeCounter);
                 //police();
                 break;
-            case 0x10:
-                colorWipe(strip.Color(255, 161, 0));
+            case 0x10: // YELLOWISH
+                colorWipe(strip.Color(255, 200, 0));
                 break;
-            case 0x11:
-                colorWipe(strip.Color(0, 255, 204));
+            case 0x11: // CYAN
+                colorWipe(strip.Color(0, 255, 220));
                 break;
-            case 0x12:
-                colorWipe(strip.Color(255, 0, 102));
+            case 0x12: // MAGENTA
+                colorWipe(strip.Color(255, 0, 220));
                 break;
             case 0x13: //FADE
                 strip.setBrightness(3);
@@ -370,14 +370,14 @@ void loop()
                 brightness = 3;
                 delay(50);
                 break;
-            case 0x14:
-                colorWipe(strip.Color(255, 204, 0));
+            case 0x14: // YELLOW
+                colorWipe(strip.Color(255, 255, 0));
                 break;
-            case 0x15:
-                colorWipe(strip.Color(0, 255, 255));
+            case 0x15: // AQUA
+                colorWipe(strip.Color(0, 200, 255));
                 break;
-            case 0x16:
-                colorWipe(strip.Color(255, 0, 153));
+            case 0x16: // PINK
+                colorWipe(strip.Color(255, 0, 160));
                 break;
             case 0x17: //SMOOTH
                 strip.setBrightness(255);
